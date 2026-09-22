@@ -1,0 +1,73 @@
+[
+  {
+    "id": "expert-f7e75d6c-8158-4bfd-9293-0eac0203d593",
+    "createdAt": "2026-09-22T06:20:16.569Z",
+    "updatedAt": "2026-09-22T06:21:17.407Z",
+    "alias": "Rodrigo Morales",
+    "role": "Senior Web Extensions Architect & NLP Systems Specialist",
+    "domain": "Arquitectura de extensiones Chromium (Manifest V3), manipulación eficiente del DOM y despliegue de modelos NLP en tiempo real.",
+    "yearsExperience": 12,
+    "organization": "Consultor técnico de arquitectura web para la extensión ModerAI, enfocado en la detección y censura dinámica de contenido no deseado (spoilers, spam, fraudes) en Facebook e Instagram Web",
+    "date": "2026-09-21",
+    "medium": "remoto",
+    "script": [
+      {
+        "id": "qa-29c8a2d2-b0dc-44ae-8516-096f46a9eaa9",
+        "question": "¿Cómo debemos solucionar el riesgo de que los cambios de estructura e inyección HTML de Meta rompan el selector de comentarios de la extensión?",
+        "answer": "No deben depender de clases CSS ofuscadas como .x1lliihq, ya que Meta las recompila y cambia con frecuencia. La estrategia resiliente es utilizar la API MutationObserver orientada a atributos de accesibilidad (aria-label, role=\"article\", data-testid) y relaciones jerárquicas en el árbol DOM. Además, la interfaz del porcentaje de fiabilidad y el difuminado deben aislarse en un Shadow DOM para evitar que los estilos globales de Facebook o Instagram interfieran con el componente",
+        "keyQuote": true
+      },
+      {
+        "id": "qa-092d6112-73cf-47f1-84de-9850a5d13b9c",
+        "question": "¿Cómo evitar que las peticiones al modelo BETO en la API de FastAPI generen latencia o congelen el scroll dinámico del usuario?",
+        "answer": "No hay que enviar una petición HTTP por cada comentario o publicación individual que aparece en pantalla. Se debe implementar un recolector en el content script que agrupe los textos extraídos por el MutationObserver en lotes (batches) cada 150-200 ms. En el backend con FastAPI y PyTorch, la API procesa el lote completo y consulta primero un servidor Redis. Si el texto ya fue analizado antes, se responde inmediatamente desde la caché sin volver a ejecutar la inferencia del modelo BETO.",
+        "keyQuote": true
+      }
+    ],
+    "keyConcepts": [
+      "Manifest V3 Background Service Workers",
+      "DOM MutationObserver Lifecycle",
+      "Encapsulamiento en Shadow DOM",
+      "Procesamiento por Lotes (Batching / Throttling)",
+      "Inferencia Transformers con BETO",
+      "Caché de Inferencia en Redis"
+    ],
+    "jargon": [
+      "Viewport Injection",
+      "Class Obfuscation",
+      "Async Hydration",
+      "Rate Limiting",
+      "Latency P95",
+      "Model Quantization (ONNX/INT8)",
+      "Shadow DOM Piercing"
+    ],
+    "dependencies": [
+      "JavaScript ES6+",
+      "Chrome Extension Manifest V3",
+      "MutationObserver API",
+      "Python 3.11+",
+      "FastAPI",
+      "PyTorch",
+      "Hugging Face Transformers",
+      "Modelo preentrenado BETO",
+      "spaCy",
+      "Redis",
+      "Docker"
+    ],
+    "ecosystemActors": [
+      "Usuarios finales de redes sociales (13+ años)",
+      "Usuarios secundarios / Administradores (Control parental con PIN/NIP)",
+      "Equipo de desarrollo ModerAI (Frontend",
+      "IA/Backend",
+      "API",
+      "Pruebas)",
+      "Plataformas objetivo (Facebook Web",
+      "Instagram Web",
+      "X)"
+    ],
+    "risks": "Cambios en el renderizado de Meta: La alteración frecuente del DOM en Facebook e Instagram puede impedir la extracción limpia de publicaciones.   \n\nLatencia en peticiones masivas: Múltiples comentarios simultáneos pueden saturar la API si no se aplica caché en Redis y procesamiento por lotes.   \n\nInactivación de Service Workers: En Manifest V3, el script de fondo de la extensión se suspende tras minutos de inactividad, requiriendo reconexiones asíncronas transparentes.   ",
+    "references": "Documento de Arquitectura y Especificaciones Técnicas ModerAI v2.   \nDocumentación Oficial de Chrome Developers (Manifest V3 Architecture & Service Workers).   \nPaper del modelo Spanish BERT (BETO - DCC UChile).   ",
+    "notes": "Rodrigo aconsejó considerar la cuantización del modelo BETO (convertirlo a formato ONNX o INT8) si el costo del servidor GPU excede el presupuesto proyectado de $1-$20 USD mensuales durante la fase de pruebas.",
+    "nextSteps": "Programar la lógica del MutationObserver con acumulación por lotes en el content script para Facebook e Instagram Web.   \nCrear el endpoint /predict/batch en FastAPI con integración directa a la caché en Redis.   \nDiseñar la tarjeta de censura con difuminado e indicador porcentual encapsulada dentro de un Shadow DOM.   "
+  }
+]

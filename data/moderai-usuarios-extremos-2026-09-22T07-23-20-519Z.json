@@ -1,0 +1,50 @@
+[
+  {
+    "classification": "mainstream",
+    "alias": "Usuario MS-01",
+    "context": "Utiliza Instagram y Facebook principalmente desde su celular para entretenimiento y para mantenerse en contacto con amigos. Ocasionalmente utiliza X para consultar temas de interés.",
+    "frequency": "2-3 h/día",
+    "skill": 6,
+    "observedTasks": "Revisa el feed, abre publicaciones que llaman su atención, lee comentarios, interactúa con algunas publicaciones y utiliza las opciones de \"No me interesa\" cuando aparece contenido que no desea ver.\n",
+    "workarounds": "Cuando aparece contenido que no quiere ver, lo desliza rápidamente, deja de seguir la cuenta o utiliza la opción de \"No me interesa\". Para evitar spoilers, evita temporalmente buscar información sobre series o películas que todavía no termina.\n",
+    "frictions": "A veces encuentra publicaciones relacionadas con temas que no quiere ver aunque no siga cuentas dedicadas a ellos. No siempre sabe cómo evitar que vuelva a aparecer contenido similar.\n",
+    "extremeNeed": "Necesita una forma sencilla de indicar qué temas no quiere encontrar sin tener que bloquear o dejar de seguir varias cuentas.\n",
+    "generalizationHypothesis": "Los usuarios promedio podrían beneficiarse de un filtro sencillo que permita indicar temas específicos que desean evitar sin tener que modificar manualmente las cuentas que siguen.",
+    "evidence": "---",
+    "id": "extreme-17f46c64-ad18-4a30-b255-48c02ecebff0",
+    "createdAt": "2026-09-22T06:57:04.479Z",
+    "updatedAt": "2026-09-22T06:57:04.482Z"
+  },
+  {
+    "classification": "super-experto",
+    "alias": "Usuario SE-01",
+    "context": "Utiliza Instagram y X diariamente para seguir contenido de videojuegos, anime y entretenimiento. Utiliza principalmente su celular y ocasionalmente computadora.",
+    "frequency": "4-6 h/día",
+    "skill": 8,
+    "observedTasks": "Navega por el feed, busca publicaciones sobre temas específicos, revisa comentarios y utiliza las opciones de \"No me interesa\", silenciar y dejar de seguir cuentas cuando encuentra contenido no deseado.\n",
+    "workarounds": "Deja de seguir cuentas que publican contenido no deseado y utiliza palabras o temas específicos para evitar buscar directamente contenido que pueda contener spoilers. Cuando encuentra una publicación que no quiere ver, la ignora rápidamente o utiliza las opciones de ocultar y \"No me interesa\".\n",
+    "frictions": "Encuentra contenido no deseado incluso cuando no está relacionado directamente con las cuentas que sigue. Los filtros actuales no permiten especificar con suficiente precisión qué temas quiere evitar y puede encontrarse spoilers antes de terminar una serie, película o videojuego.\n",
+    "extremeNeed": "Necesita poder definir exactamente qué temas quiere evitar y ocultar automáticamente publicaciones relacionadas sin tener que bloquear cuentas completas.\n",
+    "generalizationHypothesis": "Si un usuario que utiliza redes sociales frecuentemente necesita recurrir a bloquear cuentas o ignorar publicaciones para evitar contenido específico, los usuarios promedio también podrían necesitar una forma más sencilla de personalizar lo que desean ocultar",
+    "evidence": "---",
+    "id": "extreme-df993c99-3cb0-4aa2-a4b9-8200869fa5ab",
+    "createdAt": "2026-09-22T06:55:07.142Z",
+    "updatedAt": "2026-09-22T06:55:07.144Z"
+  },
+  {
+    "classification": "inexperto",
+    "alias": "Usuario IN-01",
+    "context": "Utiliza Instagram principalmente desde su celular para ver publicaciones de amigos, entretenimiento y contenido recomendado. No suele modificar las opciones de configuración de la plataforma.",
+    "frequency": "1-2 h/día",
+    "skill": 3,
+    "observedTasks": "Abre Instagram, revisa el feed, visualiza publicaciones y videos, lee algunos comentarios y continúa desplazándose cuando encuentra contenido que no le interesa.\n",
+    "workarounds": "Cuando aparece contenido que no quiere ver, simplemente lo desliza y continúa navegando. Si una cuenta publica contenido que le molesta frecuentemente, deja de seguirla.\n",
+    "frictions": "No conoce todas las opciones disponibles para personalizar el contenido que aparece en su feed. Cuando encuentra contenido relacionado con un tema que no quiere ver, no sabe cómo evitar que vuelva a aparecer.\n",
+    "extremeNeed": "Necesita una forma sencilla y fácil de entender para indicar qué temas no quiere encontrar en su feed sin tener que modificar muchas configuraciones.\n",
+    "generalizationHypothesis": "Los usuarios con poca experiencia en configuración de redes sociales podrían tener dificultades similares para personalizar el contenido que reciben y podrían beneficiarse de un sistema de filtrado más sencillo.",
+    "evidence": "---",
+    "id": "extreme-e6a3fdf8-736b-43d0-a159-5cd02d5c9629",
+    "createdAt": "2026-09-22T06:58:14.832Z",
+    "updatedAt": "2026-09-22T06:58:14.834Z"
+  }
+]

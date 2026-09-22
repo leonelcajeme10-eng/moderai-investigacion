@@ -1,0 +1,16 @@
+[
+  {
+    "place": "Entorno doméstico / Navegación en Facebook Web e Instagram Web desde el navegador Google Chrome en laptop",
+    "date": "2026-09-21",
+    "duration": "35 min",
+    "activity": "Navegación en el feed de noticias y lectura de comentarios en publicaciones de entretenimiento e información en redes sociales.   ",
+    "obviousNeeds": "Una extensión o filtro en el navegador que le permita bloquear spoilers de películas/series recién estrenadas y ocultar comentarios repetitivos de spam o estafas financieras en sus publicaciones favoritas.   ",
+    "hiddenNeeds": "Frustración y pérdida de control sobre su tiempo libre al arruinarse sorpresas de entretenimiento por contenido no deseado en el feed.\nSensación de vulnerabilidad e impotencia ante la rigidez de las herramientas de moderación nativas de Meta.   \nDeseo de navegar con tranquilidad mental y seguridad sin tener que abandonar sus redes sociales habituales ni aislarse de internet.   ",
+    "rawBehavior": "El usuario realiza scroll de forma acelerada y coloca la mano frente a la pantalla para tapar parcialmente el texto cuando intuye que una publicación habla de una serie. Cierra la pestaña de la red social de golpe al encontrarse con dos comentarios seguidos de spam/estafas con enlaces sospechosos.   ",
+    "interpretation": "El usuario no quiere dejar de usar redes sociales, pero la exposición involuntaria a spoilers y spam le genera una alta fatiga cognitiva. Si la extensión difumina preventivamente el contenido de riesgo y muestra una probabilidad porcentual estimada por IA, el usuario recuperará el control de su experiencia de navegación sin interrumpir su flujo.   ",
+    "innovationPotential": "alto",
+    "id": "observation-78498838-642e-4237-a31a-66ad328711b6",
+    "createdAt": "2026-09-22T07:02:43.858Z",
+    "updatedAt": "2026-09-22T07:02:43.860Z"
+  }
+]

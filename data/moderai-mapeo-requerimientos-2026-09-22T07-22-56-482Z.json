@@ -1,0 +1,50 @@
+[
+  {
+    "id": "requirement-a0e3d35d-5e5c-4b3a-838c-b4d7b9cecb7b",
+    "createdAt": "2026-09-22T07:18:35.858Z",
+    "updatedAt": "2026-09-22T07:20:29.544Z",
+    "insightId": "insight-163904a5-e32b-4695-9c3e-bf206a002962",
+    "insightLabel": "Necesidad de fluidez sin interrupciones en la experiencia de navegación (Usuario SE-01)",
+    "segmentId": "segment-27487525-69dc-42d7-a80b-dd830e383fcc",
+    "segmentLabel": "Optimizadores de Feed",
+    "functionalRequirement": "La extensión debe detectar dinámicamente nuevos comentarios y publicaciones cargados de forma asíncrona mientras el usuario se desplaza por el feed.   ",
+    "uxRequirement": "Procesamiento por lotes en segundo plano sin congelar el hilo principal (UI thread) del navegador para mantener un scroll fluido.   ",
+    "basePriority": 8,
+    "impactFactor": 9,
+    "computedPriority": 27.6,
+    "validationStatus": "validado",
+    "architectureDecision": "Implementación de MutationObserver con selectores jerárquicos/semánticos genéricos (resilientes a cambios de clase de Meta), agrupando textos en lotes (batches) hacia la API en FastAPI/Uvicorn dentro de un contenedor Docker.   "
+  },
+  {
+    "id": "requirement-0c82027f-4652-40d2-88ef-1b3be13d56b9",
+    "createdAt": "2026-09-22T07:16:18.248Z",
+    "updatedAt": "2026-09-22T07:20:29.544Z",
+    "insightId": "insight-1c4e8bdc-3089-43ad-b311-fa6c017eb7c9",
+    "insightLabel": "Preocupación por la exposición de menores a contenido no deseado (Usuario SE-01)",
+    "segmentId": "segment-14b9f62c-a24d-4613-a892-5b2bef7e656a",
+    "segmentLabel": "Supervisores de Contenido",
+    "functionalRequirement": "Incorporar un control de acceso mediante un NIP/PIN preestablecido que restrinja o autorice la modificación de las reglas de filtrado y etiquetas configuradas.   ",
+    "uxRequirement": "Interfaz de bloqueo intuitiva y sobria en la ventana emergente (HUD) de la extensión que impida cambios no autorizados sin afectar el rendimiento de la navegación.   ",
+    "basePriority": 7,
+    "impactFactor": 8,
+    "computedPriority": 28.6,
+    "validationStatus": "pendiente",
+    "architectureDecision": "Validación del PIN cifrado almacenado localmente en chrome.storage.local dentro del menú emergente (HUD) de la extensión antes de desbloquear los controles de edición de reglas.   "
+  },
+  {
+    "id": "requirement-89693e78-6331-4eb7-926a-e879fb7bfc7b",
+    "createdAt": "2026-09-22T07:15:21.608Z",
+    "updatedAt": "2026-09-22T07:20:29.544Z",
+    "insightId": "insight-10e4be66-e887-4f05-8a45-903ebe4d421b",
+    "insightLabel": "Frustración por falta de control sobre spoilers y reglas nativas rígidas (Usuario SE-01)",
+    "segmentId": "segment-48ea1d8b-3fa9-4f4a-b904-e4e7f742679a",
+    "segmentLabel": "Evitadores de Spoilers",
+    "functionalRequirement": "El sistema debe permitir al usuario crear etiquetas temáticas personalizadas mediante prompts para clasificar, difuminar (blurring) y censurar dinámicamente tanto el texto como la imagen asociada en publicaciones y comentarios de Facebook e Instagram Web",
+    "uxRequirement": "El contenido censurado debe desplegar un indicador visual con la probabilidad porcentual estimada por la IA, permitiendo revelar la publicación con un solo clic. El proceso de análisis debe ejecutarse con baja latencia durante el scroll.   ",
+    "basePriority": 9,
+    "impactFactor": 9.5,
+    "computedPriority": 43.7,
+    "validationStatus": "validado",
+    "architectureDecision": "Extensión para navegadores basados en Chromium en Manifest V3. Utiliza la API MutationObserver y Shadow DOM para el renderizado visual. La inferencia se procesa mediante una API REST en FastAPI conectada al modelo preentrenado BETO (PyTorch/Transformers) con caché en Redis.   "
+  }
+]

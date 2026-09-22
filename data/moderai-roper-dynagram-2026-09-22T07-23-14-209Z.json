@@ -1,0 +1,95 @@
+[
+  {
+    "id": "roper-4b8a9257-ad21-47e8-a807-7434efffffe5",
+    "createdAt": "2026-09-22T07:07:57.519Z",
+    "updatedAt": "2026-09-22T07:13:13.115Z",
+    "title": "Muestra",
+    "segments": [
+      {
+        "id": "segment-27487525-69dc-42d7-a80b-dd830e383fcc",
+        "name": "Optimizadores de Feed",
+        "values": "autonomía, privacidad, eficiencia, control digital, precisión",
+        "uxRequirement": "Control directo sobre las reglas de filtrado mediante prompts sencillos, sin perder el flujo de navegación ni tener que bloquear cuentas enteras",
+        "keyFeature": "Censura por difuminado (blurring) dinámico de texto/imagen con indicador de fiabilidad porcentual de IA y botón de desocultado rápido.",
+        "systemTone": "Neutral, técnico-eficiente, directo y no intrusivo"
+      },
+      {
+        "id": "segment-48ea1d8b-3fa9-4f4a-b904-e4e7f742679a",
+        "name": "Evitadores de Spoilers",
+        "values": "tranquilidad, disfrute, prevención, inmersión, inmediatez",
+        "uxRequirement": "Análisis semántico e interceptación antes del renderizado en pantalla para evitar que el ojo alcance a leer fragmentos de spoilers",
+        "keyFeature": "Clasificación contextual en tiempo real mediante modelo BETO y ocultamiento automático de texto e imagen relacionada.",
+        "systemTone": "Preventivo, discreto y protector."
+      },
+      {
+        "id": "segment-14b9f62c-a24d-4613-a892-5b2bef7e656a",
+        "name": "Supervisores de Contenido",
+        "values": "seguridad, protección, autoridad, responsabilidad, tranquilidad",
+        "uxRequirement": "Mecanismo de restricción para evitar que usuarios no autorizados (ej. menores) alteren o desactiven los filtros configurados",
+        "keyFeature": "Panel de control protegido por NIP/PIN preestablecido para autorizar la modificación de reglas de filtrado",
+        "systemTone": "Sobrio, institucional y seguro."
+      }
+    ],
+    "assignments": [
+      {
+        "id": "assignment-c252b2ec-724b-41b0-8561-0944f9be9071",
+        "userId": "extreme-df993c99-3cb0-4aa2-a4b9-8200869fa5ab",
+        "alias": "Usuario SE-01",
+        "segmentIds": [
+          "segment-27487525-69dc-42d7-a80b-dd830e383fcc"
+        ],
+        "evidence": "Exige definir exactamente qué temas evitar con sus propias palabras mediante etiquetas personalizadas, manifestando que las herramientas nativas de Meta son rígidas y lo obligan a bloquear cuentas completas"
+      },
+      {
+        "id": "assignment-9c617ff1-f4a0-4c9a-8beb-2a488ed08c0e",
+        "userId": "extreme-df993c99-3cb0-4aa2-a4b9-8200869fa5ab",
+        "alias": "Usuario SE-01",
+        "segmentIds": [
+          "segment-27487525-69dc-42d7-a80b-dd830e383fcc",
+          "segment-48ea1d8b-3fa9-4f4a-b904-e4e7f742679a",
+          "segment-14b9f62c-a24d-4613-a892-5b2bef7e656a"
+        ],
+        "evidence": "Exige definir exactamente qué temas evitar con sus propias palabras mediante etiquetas personalizadas, manifestando que las herramientas nativas de Meta son rígidas y lo obligan a bloquear cuentas completas"
+      },
+      {
+        "id": "assignment-43633901-fd40-408f-b710-6d3d5f0b1951",
+        "userId": "extreme-17f46c64-ad18-4a30-b255-48c02ecebff0",
+        "alias": "Usuario MS-01",
+        "segmentIds": [
+          "segment-14b9f62c-a24d-4613-a892-5b2bef7e656a"
+        ],
+        "evidence": "Expresa preocupación por el contenido inapropiado o violento al que están expuestos sus hijos en redes sociales y exige una función protegida por NIP/PIN que impida a los menores modificar o desactivar las reglas de filtrado que él configuró"
+      },
+      {
+        "id": "assignment-1d0c198f-025b-4dea-990a-dbaec24635bc",
+        "userId": "extreme-e6a3fdf8-736b-43d0-a159-5cd02d5c9629",
+        "alias": "Usuario IN-01",
+        "segmentIds": [
+          "segment-48ea1d8b-3fa9-4f4a-b904-e4e7f742679a"
+        ],
+        "evidence": "Relata que hace scroll apresurado o tapa la pantalla con la mano en Facebook e Instagram durante días de estreno para no arruinarse el final de sus series favoritas, deseando que el sistema difumine automáticamente cualquier texto o imagen relacionada con el tema."
+      },
+      {
+        "id": "assignment-9bc8068c-304d-41b3-86e9-de83e771374b",
+        "userId": "extreme-e6a3fdf8-736b-43d0-a159-5cd02d5c9629",
+        "alias": "Usuario IN-01",
+        "segmentIds": [
+          "segment-48ea1d8b-3fa9-4f4a-b904-e4e7f742679a",
+          "segment-14b9f62c-a24d-4613-a892-5b2bef7e656a"
+        ],
+        "evidence": "Relata que hace scroll apresurado o tapa la pantalla con la mano en Facebook e Instagram durante días de estreno para no arruinarse el final de sus series favoritas, deseando que el sistema difumine automáticamente cualquier texto o imagen relacionada con el tema."
+      },
+      {
+        "id": "assignment-ac487fea-955d-4f68-b01d-0b545e1139cd",
+        "userId": "extreme-df993c99-3cb0-4aa2-a4b9-8200869fa5ab",
+        "alias": "Usuario SE-01",
+        "segmentIds": [
+          "segment-27487525-69dc-42d7-a80b-dd830e383fcc",
+          "segment-48ea1d8b-3fa9-4f4a-b904-e4e7f742679a",
+          "segment-14b9f62c-a24d-4613-a892-5b2bef7e656a"
+        ],
+        "evidence": "Relata que hace scroll apresurado o tapa la pantalla con la mano en Facebook e Instagram durante días de estreno para no arruinarse el final de sus series favoritas, deseando que el sistema difumine automáticamente cualquier texto o imagen relacionada con el tema."
+      }
+    ]
+  }
+]

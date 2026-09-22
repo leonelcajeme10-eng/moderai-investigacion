@@ -1,0 +1,78 @@
+[
+  {
+    "id": "empathy-2b497744-22a0-44c2-89bd-d9c08a75b5df",
+    "createdAt": "2026-09-22T07:03:37.915Z",
+    "updatedAt": "2026-09-22T07:17:32.252Z",
+    "subject": "Usuario SE-01",
+    "fragments": [
+      {
+        "id": "fragment-78f19857-dcbb-4f06-bcf6-8abed5318dda",
+        "text": "\"No quiero dejar de seguir a un amigo o a una página solo porque están publicando spoilers de la serie de moda.\"",
+        "quadrant": "dice"
+      },
+      {
+        "id": "fragment-5e33263e-33c4-4d9c-bd76-7e1f0a9a00b8",
+        "text": "\"Los filtros por palabras clave ya no sirven, la gente usa eufemismos o imágenes con texto para saltárselos.\"",
+        "quadrant": "dice"
+      },
+      {
+        "id": "fragment-56c3b0fb-a9ac-4ab4-9549-42ddacd3c442",
+        "text": "Navega entre 4 y 6 horas diarias en Facebook, Instagram o X desde el navegador web de su computadora.   ",
+        "quadrant": "hace"
+      },
+      {
+        "id": "fragment-2bd5533d-bbd4-4f13-8576-cb41e8014bd1",
+        "text": "Recurre de forma repetitiva a silenciar, ignorar publicaciones o bloquear cuentas completas cuando un tema en tendencia se vuelve molesto.",
+        "quadrant": "hace"
+      },
+      {
+        "id": "fragment-10123353-30df-4c40-a8d8-2415543821a5",
+        "text": "\"Los algoritmos de las redes sociales están diseñados para generar enganche, no para cuidar la calidad de lo que veo.\"",
+        "quadrant": "piensa"
+      },
+      {
+        "id": "fragment-07675d56-e6bd-4849-90c6-2ef28fd61fe0",
+        "text": "\"Si una herramienta con IA comprende el contexto de la frase, podrá difuminar el contenido antes de que mi ojo lo lea.\"",
+        "quadrant": "piensa"
+      },
+      {
+        "id": "fragment-446eb535-1c96-4d8d-b835-0d752780aadd",
+        "text": "Siente empoderamiento cuando encuentra una herramienta técnica personalizada que le devuelve el dominio de su pantalla",
+        "quadrant": "siente",
+        "emotionalIntensity": 8
+      },
+      {
+        "id": "fragment-fb118dbb-7ba1-4b5f-965d-2ef155b9b270",
+        "text": "Siente molestia al tener que sacrificar conexiones o páginas completas para no ver un tema específico",
+        "quadrant": "siente",
+        "emotionalIntensity": 9
+      }
+    ],
+    "insights": [
+      {
+        "id": "insight-5c8f74d9-a10a-4654-9161-ffed1553725c",
+        "type": "necesidad oculta",
+        "description": "Bloquea cuentas enteras por no poder ocultar un solo tema",
+        "priority": 5
+      },
+      {
+        "id": "insight-163904a5-e32b-4695-9c3e-bf206a002962",
+        "type": "necesidad oculta",
+        "description": "Necesidad de fluidez sin interrupciones en la experiencia de navegación",
+        "priority": 5
+      },
+      {
+        "id": "insight-1c4e8bdc-3089-43ad-b311-fa6c017eb7c9",
+        "type": "innovación potencial",
+        "description": "Preocupación por la exposición de menores a contenido no deseado",
+        "priority": 5
+      },
+      {
+        "id": "insight-10e4be66-e887-4f05-8a45-903ebe4d421b",
+        "type": "adaptación manual",
+        "description": "Frustración por falta de control sobre spoilers y reglas nativas rígidas",
+        "priority": 5
+      }
+    ]
+  }
+]
